@@ -1,0 +1,25 @@
+{
+  "name": "adamantfi-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "build:web": "pnpm --filter web build"
+  },
+  "devDependencies": {
+    "turbo": "^1.10.0",
+    "typescript": "^5.5.4",
+    "prettier": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=22.0.0",
+    "pnpm": ">=9.0.0"
+  },
+  "packageManager": "pnpm@9.14.2"
+}
