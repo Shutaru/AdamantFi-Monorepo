@@ -10,7 +10,8 @@
     "dev": "turbo run dev",
     "build": "turbo run build",
     "lint": "turbo run lint",
-    "build:web": "pnpm --filter web build"
+    "build:web": "npm run build --workspace=web",
+    "dev:web": "npm run dev --workspace=web"
   },
   "devDependencies": {
     "turbo": "^1.10.0",
@@ -18,8 +19,6 @@
     "prettier": "^3.0.0"
   },
   "engines": {
-    "node": ">=22.0.0",
-    "pnpm": ">=9.0.0"
-  },
-  "packageManager": "pnpm@9.14.2"
+    "node": ">=22.0.0"
+  }
 }
