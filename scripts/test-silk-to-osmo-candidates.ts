@@ -48,7 +48,7 @@ function calcSwapOutput(pool: any, inputTokenId: string, outputTokenId: string, 
     if (denominator === BigInt(0)) return null;
     const output = numerator / denominator;
     return output;
-  } catch (e) {
+  } catch {
     return null;
   }
 }

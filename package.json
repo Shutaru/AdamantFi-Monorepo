@@ -10,13 +10,18 @@
     "dev": "turbo run dev",
     "build": "turbo run build",
     "lint": "turbo run lint",
+    "lint:eslint": "eslint . --ext .ts,.tsx",
+    "lint:fix": "eslint . --ext .ts,.tsx --fix",
     "build:web": "npm run build --workspace=web",
     "dev:web": "npm run dev --workspace=web"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.47.0",
+    "@typescript-eslint/parser": "^8.47.0",
+    "eslint": "^9.39.1",
+    "prettier": "^3.0.0",
     "turbo": "^1.10.0",
-    "typescript": "^5.5.4",
-    "prettier": "^3.0.0"
+    "typescript": "^5.5.4"
   },
   "engines": {
     "node": ">=22.0.0"
